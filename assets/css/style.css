@@ -1,0 +1,258 @@
+/*-------------------
+---- Main Styles ----
+---------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #89949C;
+    letter-spacing: .01em;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+a:focus,
+button:focus,
+* {
+    outline: none !important;
+}
+
+* {
+    border-radius: 0 !important;
+    -webkit-user-select: none;
+    user-select: none;
+    text-decoration: none;
+    -webkit-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+
+a:hover,
+a:focus {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*--------------------------------------
+----------- Header ---------------------
+--------------------------------------*/
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+.topbar {
+    background: #282828;
+    width: 100%;
+}
+
+.topbar ul {
+    text-align: center
+}
+
+.topbar ul li {
+    float: left
+}
+
+.topbar ul li a {
+    color: #fff;
+    font-size: 10px;
+    padding: 7px 12px;
+    position: relative;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.navbar-toggle {
+    padding: 9px 0;
+}
+
+.navbar-toggle .icon-bar {
+    background: #282828;
+}
+
+.navbar {
+    border-bottom: 1px solid #e7e7e7;
+    background: none;
+}
+
+.navbar-nav {
+    margin: 0
+}
+
+.navbar-nav li a {
+    color: #282828;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li a:focus,
+.navbar-nav li.active a {
+    color: #ff0000;
+    background: transparent
+}
+
+.navbar-brand {
+    padding: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .topbar ul {
+        float: right
+    }
+    .topbar ul li:last-child a{
+        padding-right: 0;
+    }
+    .navbar-nav {
+        float: right;
+        margin: 0 -15px;
+    }
+    .navbar-nav li a:hover,
+    .navbar-nav li a:focus,
+    .navbar-nav li.active a {
+        border-bottom: 2px solid #ff0000;
+    }
+}
+
+@media (max-width: 767px) {
+    .topbar ul li:first-child a{
+        padding-left: 0;
+    }
+    .navbar-collapse {
+        border-top: 1px solid #e7e7e7;
+    }
+}
+
+
+/*------------------------------------------
+----------------- Content ------------------
+------------------------------------------*/
+
+.content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.content .category {
+    width: 100%;
+    display: inline-block
+}
+
+.content .category h2 {
+    float: left;
+    font-size: 30px;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.results {
+    padding: 40px 0;
+    border-top: 1px solid #dedede;
+}
+
+.results .item {
+    margin: 0 0 30px;
+}
+
+.results a:hover .product-img img {
+    transform: scale(1.01);
+}
+
+.results .product-img {
+    position: relative;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.product-img img {
+    min-width: 100%;
+}
+
+.product-img span {
+    position: absolute;
+    top: 43%;
+    width: 90%;
+    margin: 0 5%;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: 30px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.product-description {
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 2px #ccc;
+}
+
+.product-description .title-price {
+    color: #687074;
+    font-size: 18px;
+}
+
+.product-description h4.title-price {
+    margin: 2px 0 0;
+    color: #687074;
+}
+
+.product-description .product-price {
+    text-align: right;
+    padding-left: 10px;
+}
+
+.product-description .gender {
+    color: #999;
+    display: block;
+    font-size: 14px;
+}
+
+.product-description .product-price span {
+    display: block;
+}
+
+.title-qty {
+    padding: 5px 0;
+}
+
+.title-qty input {
+    float: right;
+    width: 50px;
+    margin-left: 5px;
+    padding: 0 5px;
+}
+
+
+/*---------------------------------------
+-------------- Footer -------------------
+---------------------------------------*/
+
+footer {
+    text-align: center;
+    background: #282828;
+    padding: 5px 0;
+    color: #fff !important;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p a {
+    color: #f00 !important;
+}

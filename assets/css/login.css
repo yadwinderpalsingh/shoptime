@@ -1,0 +1,103 @@
+/*-------------------
+---- Login page styles ----
+---------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+html,
+body {
+    height: 100%;
+    font-family: 'Open Sans';
+    background: url("/shoptime/assets/images/landing_bg.jpg");
+    background-size: cover;
+}
+
+body {
+    color: #fff;
+    text-align: center;
+}
+
+a,
+a:focus,
+a:hover {
+    color: #fff;
+    text-decoration: underline
+}
+
+* {
+    border-radius: 0 !important;
+    -webkit-user-select: none;
+    user-select: none;
+    text-decoration: none;
+    -webkit-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+}
+
+.site-wrapper:after {
+    content: " ";
+    background: #f00;
+    position: absolute;
+    opacity: .1;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+}
+
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cover {
+    padding: 30px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    width: 100%;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+
+@media (min-width: 768px) {
+    .cover-container {
+        width: 400px;
+    }
+}
+
+.logo {
+    margin: 0 auto;
+    height: 45px;
+}
+
+#login-form {
+    padding: 15px;
+    display: inline-block;
+}
+
+.input-group-btn {
+    z-index: 1000;
+}
+
+.input-group-btn .btn {
+    color: #282;
+}
+
+.error-message {
+    font-size: 14px;
+    display: none;
+    position: absolute;
+    margin: 10px -100px;
+}
